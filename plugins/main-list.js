@@ -1,4 +1,4 @@
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Guru.jpg')
+
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => m.reply(`
 
 ┏━━━━━━━━━━━━━━━━┓
