@@ -7,7 +7,7 @@ let handler = async (m, { conn, usedPrefix, args, command, text }) => {
   let res = await fetch(`https://api.zeltoria.my.id/api/download/instagram?apikey=Elistz&url=${text}`);
   let x = await res.json();
 
-  let cap = `Now Take Your Video :)`;
+  let cap = `Downloading Completed ✔️`;
   
   if (x.result && x.result.length > 0) {
     conn.sendFile(m.chat, x.result[0].url, 'instagram.mp4', cap, m);
